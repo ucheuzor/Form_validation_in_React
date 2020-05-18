@@ -1,0 +1,33 @@
+@import './vars';
+
+.sidebar {
+    width: 350px;
+    border: 1px solid $border;
+    padding: 16px;
+    border-radius: 14px;
+    margin-left: 25px;
+    align-self: flex-start;
+    margin-top: 10px;
+    &__img-container {
+        width: 75%;
+        margin: auto;
+        img {
+            max-width: 100%;
+        }
+    }
+    &__slogan {
+        font-size: 19px;
+        font-weight: $bold;
+        color: #fff;
+        margin: 15px 0;
+    }
+    &__form-email {
+        margin-bottom: 20px;
+    }
+    &__or {
+        color: $non-active;
+        text-align: center;
+        margin: 12px 0;
+    }
+
+}

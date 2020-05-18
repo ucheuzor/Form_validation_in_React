@@ -1,0 +1,80 @@
+@import './vars';
+
+.signup {
+    max-width: 80vw;
+    width: 600px;
+    min-height: 600px;
+    height: 90vh;
+    background: $primary-background;
+    padding: 10px 30px;
+    position: absolute;
+    z-index: 9999;
+    border-radius: 14px;
+    &__header  {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 53px;
+    }
+    &__header-icon {
+        font-size: 32px;
+        height: 32px;
+    }
+    &__back {
+        font-size: 20px;
+        width: 39px;
+        height: 39px;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        border-radius: 50%;
+        cursor: pointer;
+        path {
+            fill: $primary;
+        }
+        &:hover {
+            background: $primary-light; 
+        }
+    }
+    &__next {
+        width: 70px;
+    }
+    &__heading {
+        font-size: 23px;
+        font-weight: $bold;
+        color: #fff;
+        margin: 15px 0;
+    }
+    &__form {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__form-group {
+        margin-bottom: 36px;
+    }
+    &__char-count {
+        color: $non-active;
+        font-size: 15px;
+        align-self: flex-end;
+        margin: 4px 8px;
+    }
+    &__register-btn {
+        padding: 14px;
+    }
+    &__tos {
+        color: #fff;
+        margin: 50px 0 20px 0;
+    }
+    &__link {
+        color: $primary;
+        cursor: pointer;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__code-info {
+        color: $non-active;
+        margin: -10px 0 10px 0;
+    }
+}
